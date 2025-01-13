@@ -223,7 +223,7 @@ multiple definition of `main'
 这些都与符号（symbol）有关。符号就像程序中的"名字"，代表了函数、变量等。让我们通过一个例子来理解：
 
 ```c
-static int counter = 0;        // 静态变量：文件内可见
+static int counter = 0;       // 静态变量：文件内可见
 int shared = 42;              // 全局变量：其他文件可见
 extern void print(int x);     // 外部函数：需要其他文件提供
 
@@ -372,7 +372,7 @@ FLESection {
 ```cpp
 Relocation {
     .type = RelocationType::R_X86_64_32S,  // 32位有符号绝对寻址
-    .offset = 7,                          // 重定位在节内的位置
+    .offset = 7,                           // 重定位在节内的位置
     .symbol = "str",                       // 目标符号
     .addend = 0                            // 偏移量
 }
